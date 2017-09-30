@@ -2,13 +2,13 @@
 	transform: rotate(30deg);
 }
 
-#skew{
+#skew {
 	transform: skew(23deg);
 }
-#all{
+#all {
 	transform: rotate(30deg) skew(23deg);
 }
-#matrix{
+#matrix {
   background-color: red;
   border: 2px solid #000;
   width: 200px;
@@ -19,4 +19,24 @@
 #matrix{
 	 transform: matrix(1, -0.3, 1, 1, 0, 1);
 }
+input:focus { 
+    background-color: red;
+}
+@keyframes color {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      background-color: yellow;
+    }
+}
 
+#animate {
+   animation: color 2s infinite;
+}
+#pseudo:hover {
+  background-color: red
+}
